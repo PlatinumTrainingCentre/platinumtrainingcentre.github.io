@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color: #d29c32;
+  color: cornsilk;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffd584;
+  color: gray;
   text-decoration: none;
 }
 
@@ -745,23 +745,6 @@ border-bottom: 1px solid #222222;
 .aboutP #row1{
 padding-top: 50px
 }
-/* 
-.aboutP .content {
-padding-right: 50px;
-line-height: 32px;
-} */
-/* .aboutP .type {
-padding-left: 50px;
-} */
-/* .aboutP h2 {
-color: #000;
-font-weight: 900;
-font-size: 45px;
-} */
-.aboutP h3 {
-font-weight: 700;
-font-size: 28px;
-}
 
 /* About Section */
 .visMis {
@@ -772,9 +755,7 @@ text-align: justify;
 padding-right: 50px;
 line-height: 32px;
 }
-.visMis .type {
-padding-left: 50px;
-}
+
 .visMis h2 {
 color: #000;
 font-weight: 900;
@@ -1345,4 +1326,101 @@ transform: translateY(-10px);
   font-size: 45px;
   margin: auto;
   line-height: 50px;
+  margin-bottom: 30px;
 }
+
+.course .content{
+  text-align: left;
+  padding: 20px;
+}
+.course ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+.course ul li {
+padding: 0 0 8px 26px;
+position: relative;
+}
+
+.course li::before{
+  content: "\2B25";
+  color: #fb9646;
+  margin-right: 20px;
+  
+}
+
+#gone::before{
+  content: " ";
+  color: white;
+  margin-right: 20px;
+  
+}
+
+.btnCr{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.btnCr a{
+  font-size: 20px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+}
+.btnCr a:before,
+.btnCr a:after{
+  position: absolute;
+  content: "REGISTER NOW";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btnCr a:before{
+  color: #000;
+  background: #8cc86e;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.btnCr a:after{
+  color: #000;
+  background: #fff;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.btnCr a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+/* 
+.course .container .btnReg .regnow-btn h2 {
+  color: #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.course .btnReg .regnow-btn h2{
+  border-radius: 4px;
+  padding: 5px 15px 5px 15px; 
+  white-space: nowrap;
+  transition: 0.3s;
+  border: 1px solid #000;
+  background: #8cc86e;
+}
+
+.course #rightBtn{
+  padding-bottom: 200px;
+}
+
+.course .regnow-btn h2:hover{
+  background: red;
+  color: #000;
+} */
