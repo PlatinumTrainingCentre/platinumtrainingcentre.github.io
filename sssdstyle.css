@@ -1,36 +1,23 @@
 
 /* RESET STYLES & HELPER CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
-  --level-1: #8dccad;
-  --level-2: #f5cc7f;
-  --level-3: #7b9fe0;
-  --level-4: #f27c8d;
-  --black: black;
-}
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 ol {
   list-style: none;
   padding: 0px !important;
 }
 
-body {
+.org {
   margin: 50px 0 100px;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  background-color: #fb9646;
 }
-
-/* .container {
-  max-width: 1000px;
-  padding: 0 10px;
-  margin: 0 auto;
-} */
 
 .rectangle {
   position: relative;
@@ -73,7 +60,7 @@ body {
 .level-1 {
   max-width: 300px;
   margin: 0 auto 40px;
-  background: var(--level-1);
+  background: white;
 }
 
 .level-1::before {
@@ -83,8 +70,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 40px;
-  background: var(--black);
+  height: 900px;
+  background: black;
 }
 
 
@@ -94,17 +81,6 @@ body {
   position: relative;
   display: grid;
 }
-
-/* .level-2-wrapper::after {
-  display: none;
-  content: "";
-  position: absolute;
-  left: -20px;
-  bottom: -20px;
-  width: calc(100% + 20px);
-  height: 2px;
-  background: var(--black);
-} */
 
 .level-2-wrapper li {
   position: relative;
@@ -118,53 +94,14 @@ body {
   transform: translateX(-50%);
   width: 2px;
   height: 20px;
-  background: var(--black);
+  background: black;
 }
 
 .level-2 {
   max-width: 300px;
   margin: 0 auto 40px;
-  background: var(--level-2);
+  background: white;
 }
-
-/* .level-2::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 20px;
-  background: var(--black);
-} */
-
-/* .level-2::after {
-  display: none;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(-100%, -50%);
-  width: 20px;
-  height: 2px;
-  background: var(--black);
-} */
-
-/* .level-2a-wrapper {
-  position: relative;
-  display: grid;
-} */
-
-/* .level-2-wrapper::after {
-  display: none;
-  content: "";
-  position: absolute;
-  left: -20px;
-  bottom: -20px;
-  width: calc(100% + 20px);
-  height: 2px;
-  background: var(--black);
-} */
 
 /* LEVEL-3 STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -184,7 +121,7 @@ body {
   left: calc(25% - 5px);
   width: calc(50% + 10px);
   height: 2px;
-  background: var(--black);
+  background: black;
 }
 
 .level-3-wrapper > li::before {
@@ -195,13 +132,13 @@ body {
   transform: translate(-50%, -100%);
   width: 2px;
   height: 20px;
-  background: var(--black);
+  background: black;
 }
 
 .level-3 {
   max-width: 300px;
   margin: 0 auto 40px;
-  background: var(--level-3);
+  background: white;
 }
 
 /* MQ STYLES
@@ -242,20 +179,6 @@ body {
 }
 
 
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-footer {
-  position: fixed;
-  right: 0;
-  bottom: 20px;
-  display: flex;
-  align-items: center;
-  padding: 5px;
-}
-
-.page-footer a {
-  margin-left: 4px;
-}
 
 
 /* 
