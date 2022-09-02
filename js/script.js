@@ -1,45 +1,121 @@
 const eng = document.querySelector('#btnradio1');
 const idn = document.querySelector('#btnradio2');
 
+// navigation
+const nav1 = document.querySelector('#rumah');
+const nav2 = document.querySelector('#tentang');
+const nav3 = document.querySelector('#program');
+const nav4 = document.querySelector('#pengajar');
+const nav5 = document.querySelector('#testimoni');
+
+// footer
+const foot1 = document.querySelector('#rumahF');
+const foot2 = document.querySelector('#tentangF');
+const foot3 = document.querySelector('#programF');
+const foot4 = document.querySelector('#pengajarF');
+const foot5 = document.querySelector('#testimoniF');
+
+// footer section 2
+const foot1a = document.querySelector('#rumahFa');
+
+// hero
 const contentTag = document.querySelector('.content-tag');
-const contentT1 = document.querySelector('.content-t1');
-const contentT2 = document.querySelector('.content-t2');
-const contentT3 = document.querySelector('.content-t3');
-const contentT4 = document.querySelector('.content-t4');
-const contentT5 = document.querySelector('.content-t5');
-const contentP1 = document.querySelector('.content-p1');
-const contentP2 = document.querySelector('.content-p2');
-const contentP3 = document.querySelector('.content-p3');
-const contentP4 = document.querySelector('.content-p4');
+const contentTag1 = document.querySelector('.content-tag1');
+const contentTag2 = document.querySelector('.content-tag2');
+
+// index page
+const indexP1 = document.querySelector('.indexP1');
+const indexT1 = document.querySelector('.indexT1');
+const contentS1 = document.querySelector('.sukses1');
+const contentS2 = document.querySelector('.sukses2');
+const contentS3 = document.querySelector('.sukses3');
+const contentS4 = document.querySelector('.sukses4');
+const contentS5 = document.querySelector('.sukses5');
+const contentS6 = document.querySelector('.sukses6');
+const indexT2 = document.querySelector('.indexT2');
+
+// about page
+const aboutP1 = document.querySelector('.aboutP1');
 
 eng.addEventListener('click', english);
 idn.addEventListener('click', bahasa);
 
 function english() {
+    
+    // navigation
+    nav1.innerHTML = 'Home';
+    nav2.innerHTML = 'About';
+    nav3.innerHTML = 'Course Programme';
+    nav4.innerHTML = 'Lecturers';
+    nav5.innerHTML = 'Testimonial';
+    
+    // footer
+    foot1.innerHTML = 'Home';
+    foot2.innerHTML = 'About';
+    foot3.innerHTML = 'Course Programme';
+    foot4.innerHTML = 'Lecturers';
+    foot5.innerHTML = 'Testimonial';
+
+    // footer section 2
+    foot1a.innerHTML = 'Home';
+
+    // hero
     contentTag.innerHTML = 'REGISTER NOW!';
-    contentT1.innerHTML = 'About';
-    contentT2.innerHTML = 'Signature Products from BaliStuti';
-    contentT3.innerHTML = 'Wood Handicraft Statue';
-    contentT4.innerHTML = 'Wood Handicraft Utensil';
-    contentT5.innerHTML = 'Costum Made';
-    contentP1.innerHTML =
-        'BaliStuti was founded in 1998. First established as a small shop in Legian, Double Six beach. BaliStuti was inspired by a term in Sanskrit “Stuti” which means “Trusted”, so BaliStuti means “Trusted from Bali”. We`ve gone a long way in providing high-quality handicrafts at reasonable pricing. Whether you`re a wholesale distributor, store, or individual buyer, we have reasonable pricing. We welcome your enquiries and invite you to browse our website. We look forward to working with you.';
-    contentP2.innerHTML = 'Sculpture products made from selected wood and carved by the professional of the best Balinese wood craftsmen.';
-    contentP3.innerHTML = 'Products made by professional craftsmen who design tools that are useful and comfortable to be use by the customer.';
-    contentP4.innerHTML = 'Products that are crafted from the hands of professional craftsmen based on customer request.';
+    contentTag1.innerHTML = 'REGISTER NOW!';
+    contentTag2.innerHTML = 'REGISTER NOW!';
+
+    // index page
+    indexP1.innerHTML = 'Inggris';
+    indexT1.innerHTML = 'Success Story';
+    contentS1.innerHTML = 'inglish';
+    contentS2.innerHTML = 'inglish';
+    contentS3.innerHTML = 'inglish';
+    contentS4.innerHTML = 'inglish';
+    contentS5.innerHTML = 'inglish';
+    contentS6.innerHTML = 'inglish';
+    indexT2.innerHTML = 'Location';
+
+    // about page
+    aboutP1.innerHTML = 'inglish';
+
 }
 
 function bahasa() {
+
+    // navigation
+    nav1.innerHTML = 'Awal';
+    nav2.innerHTML = 'Tentang';
+    nav3.innerHTML = 'Program Pembelajaran';
+    nav4.innerHTML = 'Pengajar';
+    nav5.innerHTML = 'Testimoni';
+
+    // footer
+    foot1.innerHTML = 'Awal';
+    foot2.innerHTML = 'Tentang';
+    foot3.innerHTML = 'Program Pembelajaran';
+    foot4.innerHTML = 'Pengajar';
+    foot5.innerHTML = 'Testimoni';
+
+    // footer section 2
+    foot1a.innerHTML = 'Awal';
+
+    // hero
     contentTag.innerHTML = 'DAFTAR SEKARANG!';
-    contentT1.innerHTML = 'Tentang';
-    contentT2.innerHTML = 'Produk Andalan BaliStuti';
-    contentT3.innerHTML = 'Patung Kayu Pahatan';
-    contentT4.innerHTML = 'Kerajinan Perkakas Kayu';
-    contentT5.innerHTML = 'Pesanan Khusus';
-    contentP1.innerHTML =
-        'BaliStuti pertama kali didirikan pada tahun 1998 sebagai sebuah toko kecil di Legian, pantai Double Six. BaliStuti ini sendiri terinspirasi dari istilah dalam bahasa Sansekerta yaitu “Stuti” yang berarti “Terpercaya”, sehingga BaliStuti mempunyai makna tersendiri yang artinya “Terpercaya dari Bali”. Kami telah melangkah jauh dalam menyediakan kerajinan tangan yang berkualitas tinggi dengan harga yang wajar. Baik jika anda adalah distributor grosir, toko, atau pembeli perorangan, kami akan memberikan harga yang terjangkau. Kami juga akan menyambut pertanyaan Anda dan mengundang Anda untuk menelusuri situs web kami. Kami berharap agar dapat bekerja sama dengan Anda.';
-    contentP2.innerHTML =
-        'Produk patung yang berbahan dasar kayu pilihan, dibuat dan dipahat dari tangan tangan profesional pengrajin kayu bali terbaik. ';
-    contentP3.innerHTML = 'Produk hasil karya tangan pengerajin profesional yang mendesign utensil yang berguna dan nyaman digunakan bagi pengguna. ';
-    contentP4.innerHTML = 'Produk yang dihasilkan dari tangan pengerajin profesional yang berdasarkan keinginan pelanggan.';
+    contentTag1.innerHTML = 'DAFTAR SEKARANG!';
+    contentTag2.innerHTML = 'DAFTAR SEKARANG!';
+
+    // index page
+    indexP1.innerHTML = 'Indo';
+    indexT1.innerHTML = 'Cerita Sukses';
+    contentS1.innerHTML = 'indo';
+    contentS2.innerHTML = 'indo';
+    contentS3.innerHTML = 'indo';
+    contentS4.innerHTML = 'indo';
+    contentS5.innerHTML = 'indo';
+    contentS6.innerHTML = 'indo';
+    indexT2.innerHTML = 'Lokasi';
+
+    // about page
+    aboutP1.innerHTML = 'indo';
+
 }

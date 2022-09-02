@@ -749,7 +749,7 @@ padding-top: 50px
 /* About Section */
 .visMis {
 padding-top: 50px;
-text-align: justify;
+text-align: center;
 }
 .visMis .content {
 padding-right: 50px;
@@ -1374,11 +1374,7 @@ position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-25px);
   transition: transform .25s;
-}
-.btnCr a:before,
-.btnCr a:after{
   position: absolute;
-  content: "REGISTER NOW";
   height: 55px;
   width: 180px;
   display: flex;
@@ -1387,23 +1383,16 @@ position: relative;
   border: 1px solid black;
   box-sizing: border-box;
   border-radius: 5px;
-}
-.btnCr a:before{
   color: #000;
   background: #8cc86e;
-  transform: rotateY(0deg) translateZ(25px);
 }
-.btnCr a:after{
+
+.btnCr a:hover{
   color: #000;
   background: #fff;
-  transform: rotateX(90deg) translateZ(25px);
-}
-.btnCr a:hover{
-  transform: translateZ(-25px) rotateX(-90deg);
 }
 
 .course .type1, .type2{
-  /* border: 1px solid black; */
   transition: .3s ease;
 }
 

@@ -38,11 +38,11 @@
 
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./course.html" class="active-page">Course Programme</a></li>
-                        <li><a href="./lecturers.html">Lecturers</a></li>
-                        <li><a href="./testimonial.html">Testimonial</a></li>
+                        <li><a href="./index.html" id="rumah">Home</a></li>
+                        <li><a href="./about.html" id="tentang">About</a></li>
+                        <li><a href="./course.html" class="active-page" id="program">Course Program</a></li>
+                        <li><a href="./lecturers.html" id="pengajar">Lecturers</a></li>
+                        <li><a href="./testimonial.html" id="testimoni">Testimonial</a></li>
                         <li class="ms-lg-5 ms-2">
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
@@ -69,46 +69,46 @@
             <section class="course">
                 <div class="container">
                     <div class="header">
-                        <h1>Course Program</h1>
+                        <h1 class="courseT1">Course Program</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 type1">
-                            <h2>1 Year Proffesional Program</h2>
+                            <h2 class="courseT2">1 Year Professional Program</h2>
                             <div class="content">
                                 <div class="listCont">
                                     <ul>
-                                        <li>Cruiseline</li>
-                                        <li>Pastry & Bakery</li>
-                                        <li>F&B Product Department</li>
-                                        <li>F&B Service Development</li>
-                                        <li>Housekeeping Department</li>
-                                        <li>Front Office Department</li>
-                                        <li>Hotel Office Administration</li>
+                                        <li class="a1">Cruise Line</li>
+                                        <li class="a2">Pastry & Bakery</li>
+                                        <li class="a3">F&B Product Department</li>
+                                        <li class="a4">F&B Service Development</li>
+                                        <li class="a5">Housekeeping Department</li>
+                                        <li class="a6">Front Office Department</li>
+                                        <li class="a7">Hotel Office Administration</li>
                                         
                                     </ul>
                                 </div>
                             </div>
                             <div class="btnReg">
-                                <span class="btnCr"><a href="https://wa.me/6281337396868" class="regnow-btn" target="_blank"></a></span>
+                                <span class="btnCr"><a href="https://wa.me/6281337396868" class="regnow-btn1" target="_blank">REGISTER</a></span>
                             </div>
                         </div>
                         <div class="col-lg-6 type2">
-                            <h2>2 Year Proffesional Program</h2>
+                            <h2 class="courseT3">2 Year Professional Program</h2>
                             <div class="content">
                                 <div class="listCont">
                                     <ul>
-                                        <li>Hotel Supervision</li>
-                                        <li>Public Relation</li>
-                                        <li>F&B Product Department</li>
-                                        <li>F&B Service Development</li>
-                                        <li>Room Divison Management</li>
+                                        <li class="b1">Hotel Supervision</li>
+                                        <li class="b2">Public Relation</li>
+                                        <li class="b3">F&B Product Department</li>
+                                        <li class="b4">F&B Service Development</li>
+                                        <li class="b5">Room Divison Management</li>
                                         <li id="gone"> </li>
                                         <li id="gone"> </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="btnReg" id="btnRight">
-                                <span class="btnCr"><a href="https://wa.me/6281337396868" class="regnow-btn" target="_blank"></a></span>
+                                <span class="btnCr"><a href="https://wa.me/6281337396868" class="regnow-btn2" target="_blank">REGISTER</a></span>
                             </div>
                         </div>
                     </div>
@@ -133,16 +133,16 @@
 
                         <div class="col-lg-3 col-md-6 footer-links">
                             <h4>Platinum Training Centre</h4>
-                            <a href="./index.html">Home</a><br>
-                            <a href="./about.html">About</a><br>
-                            <a href="./course.html">Course Programme</a><br>
-                            <a href="./lecturers.html">Lecturers</a><br>
-                            <a href="./testimonial.html">Testimonial</a><br>
+                            <a href="./index.html" id="rumahF">Home</a><br>
+                            <a href="./about.html" id="tentangF">About</a><br>
+                            <a href="./course.html" id="programF">Course Program</a><br>
+                            <a href="./lecturers.html" id="pengajarF">Lecturers</a><br>
+                            <a href="./testimonial.html" id="testimoniF">Testimonial</a><br>
                         </div>
 
                         <div class="col-lg-2 col-md-6 footer-links">
                             <h4>WordPress</h4>
-                            <a href="#hero">Home</a><br>
+                            <a href="./index.html" id="rumahFa">Home</a><br>
                         </div>
 
                         <div class="col-lg-3 col-md-6 footer-newsletter">
@@ -180,7 +180,138 @@
         <script src="./libraries/navbar-animation/navbar.js"></script>
 
         <!-- Javascript -->
-        <script src="./js/script.js"></script>
+        <!-- <script src="./js/script.js"></script> -->
+        <script>
+            const eng = document.querySelector('#btnradio1');
+            const idn = document.querySelector('#btnradio2');
+
+            // navigation
+            const nav1 = document.querySelector('#rumah');
+            const nav2 = document.querySelector('#tentang');
+            const nav3 = document.querySelector('#program');
+            const nav4 = document.querySelector('#pengajar');
+            const nav5 = document.querySelector('#testimoni');
+
+            // footer
+            const foot1 = document.querySelector('#rumahF');
+            const foot2 = document.querySelector('#tentangF');
+            const foot3 = document.querySelector('#programF');
+            const foot4 = document.querySelector('#pengajarF');
+            const foot5 = document.querySelector('#testimoniF');
+
+            // footer section 2
+            const foot1a = document.querySelector('#rumahFa');
+
+            // course page
+            const courseT1= document.querySelector('.courseT1');
+            const courseT2= document.querySelector('.courseT2');
+            const courseT3= document.querySelector('.courseT3');
+
+            const a1 = document.querySelector('.a1');
+            const a2 = document.querySelector('.a2');
+            const a3 = document.querySelector('.a3');
+            const a4 = document.querySelector('.a4');
+            const a5 = document.querySelector('.a5');
+            const a6 = document.querySelector('.a6');
+            const a7 = document.querySelector('.a7');
+
+            const b1 = document.querySelector('.b1');
+            const b2 = document.querySelector('.b2');
+            const b3 = document.querySelector('.b3');
+            const b4 = document.querySelector('.b4');
+            const b5 = document.querySelector('.b5');
+
+            const regnowbtn1 = document.querySelector('.regnow-btn1');
+            const regnowbtn2 = document.querySelector('.regnow-btn2');
+            
+            eng.addEventListener('click', english);
+            idn.addEventListener('click', bahasa);
+
+            function english() {
+                
+                // navigation
+                nav1.innerHTML = 'Home';
+                nav2.innerHTML = 'About';
+                nav3.innerHTML = 'Course Program';
+                nav4.innerHTML = 'Lecturers';
+                nav5.innerHTML = 'Testimonial';
+                
+                // footer
+                foot1.innerHTML = 'Home';
+                foot2.innerHTML = 'About';
+                foot3.innerHTML = 'Course Program';
+                foot4.innerHTML = 'Lecturers';
+                foot5.innerHTML = 'Testimonial';
+
+                // footer section 2
+                foot1a.innerHTML = 'Home';
+
+                // course page
+                courseT1.innerHTML = 'Course Program';
+                courseT2.innerHTML = '1 Year Professional Program';
+                courseT3.innerHTML = '2 Year Professional Program';
+
+                a1.innerHTML = 'Cruise Line';
+                a2.innerHTML = 'Pastry & Bakery';
+                a3.innerHTML = 'F&B Product Department';
+                a4.innerHTML = 'F&B Service Development';
+                a5.innerHTML = 'Housekeeping Department';
+                a6.innerHTML = 'Front Office Department';
+                a7.innerHTML = 'Hotel Office Administration';
+
+                b1.innerHTML = 'Hotel Supervision';
+                b2.innerHTML = 'Public Relation';
+                b3.innerHTML = 'F&B Product Department';
+                b4.innerHTML = 'F&B Service Development';
+                b5.innerHTML = 'Room Divison Management';
+
+                regnowbtn1.innerHTML = 'REGISTER';
+                regnowbtn2.innerHTML = 'REGISTER';
+            }
+
+            function bahasa() {
+
+                // navigation
+                nav1.innerHTML = 'Awal';
+                nav2.innerHTML = 'Tentang';
+                nav3.innerHTML = 'Program Pembelajaran';
+                nav4.innerHTML = 'Pengajar';
+                nav5.innerHTML = 'Testimoni';
+
+                // footer
+                foot1.innerHTML = 'Awal';
+                foot2.innerHTML = 'Tentang';
+                foot3.innerHTML = 'Program Pembelajaran';
+                foot4.innerHTML = 'Pengajar';
+                foot5.innerHTML = 'Testimoni';
+
+                // footer section 2
+                foot1a.innerHTML = 'Awal';
+
+                courseT1.innerHTML = 'Program Pembelajaran';
+                courseT2.innerHTML = 'Program Profesional 1 Tahun';
+                courseT3.innerHTML = 'Program Profesional 2 Tahun';
+
+                a1.innerHTML = 'Pesiar';
+                a2.innerHTML = 'Pastry & Bakery';
+                a3.innerHTML = 'Departement Produk F&B';
+                a4.innerHTML = 'Pengembangan Layanan F&B';
+                a5.innerHTML = 'Departemen Housekeeping';
+                a6.innerHTML = 'Departemen Front Office';
+                a7.innerHTML = 'Administrasi Perkantoran Hotel';
+
+                b1.innerHTML = 'Pengawasan Hotel';
+                b2.innerHTML = 'Hubungan Masyarakat';
+                b3.innerHTML = 'Departement Produk F&B';
+                b4.innerHTML = 'Pengembangan Layanan F&B';
+                b5.innerHTML = 'Manajemen Divisi Kamar';
+
+                regnowbtn1.innerHTML = 'DAFTAR';
+                regnowbtn2.innerHTML = 'DAFTAR';
+            }
+
+        </script>
+
 
     </body>
 </html>
