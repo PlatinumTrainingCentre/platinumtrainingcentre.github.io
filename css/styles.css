@@ -349,10 +349,6 @@ border-color: #d29c32;
   align-items: center;
 }
 
-#footer .footer-top .footer-links{
-  /* text-align: center; */
-}
-
 #footer .footer-top .footer-links a{
   color: #000;
   line-height: 30px;
@@ -763,72 +759,6 @@ ol {
   }
 }
 
-
-/* .org {
-background-color: #fb9646;
-}
-.org h1 {
-  color: #000;
-  font-size: 50px;
-  margin: auto;
-  line-height: 50px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.org .item {
-text-align: center;
-border: 1px solid #000;
-padding: 20px;
-padding-top: 15px;
-padding-bottom: 20px;
-transition: all ease-in-out 0.3s;
-background: #fb9646
-}
-.org .item img {
-max-height: 200px;
-}
-.org .item .icon {
-margin: 0 auto;
-width: 104px;
-height: 64px;
-background: #d29c32;
-border-radius: 4px;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 20px;
-transition: 0.3s;
-}
-.org .item .icon i {
-color: #151515;
-font-size: 28px;
-transition: ease-in-out 0.3s;
-}
-.org .item h4 {
-font-family: 'Poppins', sans-serif;
-font-weight: 600;
-margin-top: 15px;
-margin-bottom: 15px;
-font-size: 24px;
-color: #000;
-}
-
-.org .item p {
-line-height: 24px;
-margin-top: 15px;
-margin-bottom: 15px;
-font-size: 20px;
-color: #000;
-text-align: center;
-}
-.org .item:hover {
-border-color: #000;
-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-transform: translateY(-10px);
-} */
-
-
-
 /* lecturers */
 
 
@@ -856,7 +786,8 @@ transform: translateY(-10px);
 
 .lect {
   margin: 10px;
-  padding: 5px;
+  /* mau balik kek awal itu ini padding nya dikasi 5px aja sama uncomment p */
+  padding: 5px 60px 5px 60px;
   max-width: 30%;
   cursor: pointer;
   transition: 0.4s;
@@ -1114,30 +1045,3 @@ position: relative;
   box-shadow: 0px 0 25px 0 white;
   transform: translateY(-10px);
 }
-
-/* 
-.course .container .btnReg .regnow-btn h2 {
-  color: #000;
-  font-size: 30px;
-  line-height: 50px;
-  text-align: center;
-}
-
-.course .btnReg .regnow-btn h2{
-  border-radius: 4px;
-  padding: 5px 15px 5px 15px; 
-  white-space: nowrap;
-  transition: 0.3s;
-  border: 1px solid #000;
-  background: #8cc86e;
-}
-
-.course #rightBtn{
-  padding-bottom: 200px;
-}
-
-.course .regnow-btn h2:hover{
-  background: red;
-  color: #000;
-} */
-
