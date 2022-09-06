@@ -73,14 +73,14 @@ section {
                                                             /* HOME CSS*/
 /* Hero Section */
 #hero .carousel-item{
-      width: 100vw;
-      height: 100vh;
-      background: #000;
-      color: white;
-      position: relative;
-      background-position: center;
-      background-size: cover;
-    }
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
 #hero .carousel-item .overlay-image{
   position: absolute;
   background-position: center;
