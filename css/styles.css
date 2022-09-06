@@ -98,6 +98,7 @@ section {
   background-size: cover;
   position: relative;
 }
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
@@ -128,6 +129,22 @@ section {
 #hero .regnow-btn h2:hover{
   background: #fff;
   color: #000;
+}
+
+@media (min-width: 1024px) {
+
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  .about .content {
+    padding-right: 12px;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 /* About Section */
@@ -410,24 +427,6 @@ border-color: #d29c32;
   color: #fff;
 }
 
-
-/* Media Querry */
-
-@media (min-width: 1024px) {
-
-#hero {
-  background-attachment: fixed;
-}
-}
-@media (max-width: 768px) {
-.about .content {
-  padding-right: 12px;
-}
-#hero h2 {
-  font-size: 20px;
-  line-height: 24px;
-}
-}
 
                                                             /* ABOUT CSS*/
 
