@@ -785,14 +785,19 @@ ol {
 
 .lect {
   margin: 10px;
-  /* mau balik kek awal itu ini padding nya dikasi 5px aja sama uncomment p */
+  width: 350px;
+  height: 350px;
   padding: 5px 60px 5px 60px;
-  max-width: 30%;
+  /* max-width: 30%; */
   cursor: pointer;
   transition: 0.4s;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border-radius: 20px;
   border: 1px solid black;
+}
+#baris2 {
+  width: 450px;
+  height: 350px;
 }
 
 .lect:hover {
